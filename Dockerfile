@@ -20,7 +20,7 @@ ENV NODE_VERSION 16.3.0
 WORKDIR ${NVM_DIR}
 
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash \
-  && source ${NVM_DIR}/nvm.sh \
+  && . ${NVM_DIR}/nvm.sh \
   && nvm install ${NODE_VERSION} \
   && nvm alias default ${NODE_VERSION} \
   && nvm use default
