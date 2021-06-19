@@ -12,6 +12,7 @@ RUN apt update && apt install -y -q --no-install-recommends \
   gpg \
   hugo \
   libssl-dev \
+  ssh \
   wget
 
 # Install NVM to manage node
