@@ -9,6 +9,7 @@ RUN apt update && apt install -y -q --no-install-recommends \
   curl \
   git \
   golang \
+  gpg \
   hugo \
   libssl-dev \
   wget
