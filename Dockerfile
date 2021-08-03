@@ -13,7 +13,8 @@ RUN apt update && apt install -y -q --no-install-recommends \
   hugo \
   libssl-dev \
   ssh \
-  wget
+  wget \
+  && apt autoremove -y && apt clean -y
 
 # Install NVM to manage node
 ENV NVM_DIR /usr/local/nvm
